@@ -113,7 +113,7 @@
                       </span>
                       <span>Code (CARLA & Real-World Robot)</span>
                     </a>
-                  </span> 
+                  </span>
 
                   <!-- Code Link. -->
                    
@@ -129,15 +129,14 @@
                   <!-- Dataset Link. -->
 
                   <span class="link-block">
-                  <a href="https://drive.google.com/drive/folders/1P4NpKcUNFecZxFazlyUULAEPqb3JkAnp" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <a href="https://drive.google.com/drive/folders/1P4NpKcUNFecZxFazlyUULAEPqb3JkAnp" target="_blank">
                   <span class="icon">
                     <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 892.68816472c-179.30561336 0-319.74612799-63.19470985-319.74612799-143.80778519V275.09119949c0-80.63902496 140.44175032-143.7818356 319.74612799-143.78183559s319.74612799 63.14404634 319.74612799 143.78183559v473.78918004c0 80.61183966-140.44175032 143.8090209-319.74612799 143.80902089z m0-730.94114625c-173.04434365 0-289.31588759 58.61275048-289.31588759 113.35035948v473.78918005c0 54.74008041 116.26907255 113.32193849 289.31588759 113.32193848s289.31588759-58.58309378 289.31588759-113.32193848V275.09737795c0-54.74008041-116.26907255-113.35035948-289.31588759-113.35035948z m0 568.49783536c-179.30561336 0-319.74612799-63.14404634-319.74612799-143.75341459 0-8.40273023 6.78891175-15.2435412 15.2151202-15.24354121 8.42867984 0 15.21635589 6.84081097 15.2163559 15.24354121 0 54.7388447 116.26907255 113.32193849 289.31588759 113.32193849s289.31588759-58.58309378 289.31588758-113.32193849c0-8.40273023 6.78520467-15.2435412 15.21635589-15.24354121 8.42497276 0 15.21512021 6.84081097 15.21512022 15.24354121 0.00370709 80.61183966-140.44051463 143.75341459-319.7448923 143.75341459z m0-162.44701798c-179.30561336 0-319.74612799-63.14281064-319.74612799-143.75341459 0-8.40273023 6.78891175-15.24230551 15.2151202-15.24230551 8.42867984 0 15.21635589 6.83957527 15.2163559 15.24230551 0 54.7388447 116.26907255 113.32317419 289.31588759 113.32317419s289.31588759-58.58432949 289.31588758-113.32317419c0-8.40273023 6.78520467-15.24230551 15.21635589-15.24230551 8.42497276 0 15.21512021 6.83957527 15.21512022 15.24230551 0.00370709 80.61183966-140.44051463 143.75341459-319.7448923 143.75341459z m0-162.4408395c-179.30561336 0-319.74612799-63.14404634-319.74612799-143.7830713 0-8.42744415 6.78891175-15.21512021 15.2151202-15.21512019a15.18422782 15.18422782 0 0 1 15.2163559 15.21512019c0 54.74008041 116.26907255 113.35035948 289.31588759 113.3503595s289.31588759-58.61275048 289.31588758-113.3503595c0-8.42744415 6.78520467-15.21512021 15.21635589-15.21512019a15.18669921 15.18669921 0 0 1 15.21512022 15.21512019c0.00370709 80.64026065-140.44051463 143.78307129-319.7448923 143.7830713z"  /></svg>
                   </span>
                   <span>Carla Raw Dataset</span>
                   </a>
-                  </span>                  
-
-
+                  </span>
+                    
                 </div>
 
               </div>
@@ -230,8 +229,13 @@
     </section>
 
     <!-- Visualization section -->
-    <h3 class="title is-2" style="text-align:center; margin-top: 85px;">Visualization of Tasks</h3>   
-      <div class="container is-max-desktop" style="text-align: center;">
+    <section class="hero teaser" style="margin-bottom: 0px;">
+      <div class="hero-body">
+        <div class="container is-max-desktop" style="text-align: center;">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              
+              <h3 class="title is-2" style="text-align:center; margin-top: 85px;">Visualization of Tasks</h3>   
         <div class="content has-text-justified">
           <p>  This section contains visualizations of our experimental setups and 
             data processing steps. Both setups icludes original and confounded environments.
@@ -345,7 +349,9 @@
           <p> AutoFocus-IL </p>
         </div>
         </div>
-
+        </div>
+      </div>
+      </div>
       <hr>
 
     </section>
@@ -380,23 +386,17 @@
                 <div class="prompt-container">
                   <div class="prompt-block collapsed" id="promptBlock"><strong>The following is a short video segment of an autonomous driving trajectory.
 1. First, understand what the autonomous vehicle is doing in this video (e.g., approaching an intersection, stopping, turning, adjusting to other vehicles).
-
 2. Identify and list all visible objects in the scene that are relevant to driving. For each object, provide:
   - type: the object’s category (e.g., Stop Sign, Speed Limit Sign, Lane Markings, Vehicles).
   - relevance: the role of this object in driving context (e.g., traffic_control, navigation, safety_critical, context).
   - description: one sentence describing its appearance, meaning, and role in driving.
-
 3. Ignore irrelevant background objects or decorations that do not affect the driving task.
-
 4. Ensure consistent naming style for object type (singular, capitalized, concise).
-
 5. After listing objects, summarize the vehicle’s behavioral description in one sentence (e.g., “The vehicle approaches a stop sign, halts, then continues driving while maintaining lane alignment and adjusting speed to oncoming traffic.”).
-
 6. Finally, output a metadata block summarizing:
   - total_objects: total count of unique driving-relevant objects (not including pure context objects like trees/buildings, unless explicitly relevant).
   - object_types: array of the key object categories detected.
   - processed_frames: number of video frames analyzed.
-
 7. Output must strictly follow this JSON format and avoid redundant text:
 <div class="json-block">json
     {
@@ -416,8 +416,7 @@
         "object_types": ["&lt;object1&gt;", "&lt;object2&gt;", "..."],
         "processed_frames": &lt;int&gt;
       }
-    }</div></strong>
-                </div>
+    }</div></strong></div>
                   <button class="toggle-btn" id="toggleBtn">Show Full Prompt</button>
                 </div>
                   <p>
@@ -442,12 +441,9 @@
   }</div>Rules:
 - Prioritize collision risks (in-path vehicles, close pedestrians/cyclists), rule-governing items (traffic_light/sign), and trajectory-relevant actors.
 - "score" is an importance weight; approximate is fine; we only use ids for filtering.
-- Return JSON only (no extra text).</strong>
-                </div>
+- Return JSON only (no extra text).</strong></div>
                   <button class="toggle-btn" id="toggleBtn">Show Full Prompt</button>
-                </div>
-
-                </div>
+                </div></div>
               
               <h3 class="title is-3" style="text-align:center; margin-top: 45px;">Real-World Robot</h3>
                           <div class="content has-text-justified">
@@ -476,8 +472,7 @@
       }
       ],
       &quot;description&quot;: &quot;&lt;one-sentence action summary of what the robot/person is doing and key event&gt;&quot;
-}</div></strong>
-                </div>
+}</div></strong></div>
                   <button class="toggle-btn" id="toggleBtn">Show Full Prompt</button>
                 </div>
                   <p>
@@ -495,15 +490,14 @@
   2) Prioritize direct targets (e.g., doors/handles/buttons/knobs), tools/containers, direct supports, and direct obstacles.
   3) If you believe there are potentially missing objects/parts in the current context, please list their classes for re-detection.
   4) Return JSON format:<div class="json-block">{
-  "top_k": [
-    {"id": <int>, "class": "<str>", "score": <float 0~1>, "rationale": "<short>"}
-  ],
-  "missing_suspects": ["<class>", ...]
+    "top_k": [
+      {"id": &lt;int&gt;, "class": "&lt;str&gt;", "score": &lt;float 0~1&gt;, "rationale": "&lt;short&gt;"}
+    ],
+    "missing_suspects": ["&lt;class&gt;", ...]
 }</div>Rules:
   - Explicitly address key components (e.g., microwave handles, cabinet doors, button panels).
   - Exclude distant/background items not relevant to the action. - "score" is the importance weight; an approximate value is sufficient; the ID is used for filtering.
-  - Returns only JSON (no extra text).</strong>
-                </div>
+  - Returns only JSON (no extra text).</strong></div>
                   <button class="toggle-btn" id="toggleBtn">Show Full Prompt</button>
                 </div>
               <br>
